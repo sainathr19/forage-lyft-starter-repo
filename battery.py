@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from datetime import datetime
 
 
 class Battery(ABC):
@@ -7,4 +8,4 @@ class Battery(ABC):
 
     @abstractmethod
     def battery_needs_service(self):
-        pass
+        return self.battery_needs_service()
